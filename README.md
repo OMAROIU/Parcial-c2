@@ -1,4 +1,5 @@
 # README.md
+## usuario: admin contraseña: 1234
 ## Omar Salvador Garcia Vasquez
 ## Flor Marina Torres Jandres
 
