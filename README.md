@@ -5,8 +5,6 @@ usuario: admin contraseña: 1234
 
 ## Sistema Web - Farmacia La Buena
 
-Proyecto desarrollado en PHP, MariaDB y CSS para el control de pacientes y acceso mediante login.
-
 ---
 
 ## 1. ¿Cómo manejan la conexión a la BD y qué pasa si algunos de los datos son incorrectos? Justifiquen la manera de validación de la conexión.
