@@ -1,0 +1,303 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:linear-gradient(135deg,#141e30,#243b55);
+min-height:100vh;
+padding:20px;
+}
+
+/* CONTENEDORES */
+
+.contenedor,
+.panel{
+width:90%;
+max-width:1150px;
+margin:30px auto;
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+/* TITULOS */
+
+h1{
+text-align:center;
+font-size:36px;
+margin-bottom:15px;
+color:#1b2a41;
+}
+
+h2{
+text-align:center;
+margin:25px 0 15px;
+color:#243b55;
+}
+
+h3{
+color:#243b55;
+}
+
+/* PANEL PRINCIPAL */
+
+.encabezado{
+text-align:center;
+padding:25px;
+border-radius:18px;
+background:linear-gradient(135deg,#00c6ff,#0072ff);
+color:white;
+margin-bottom:25px;
+box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+.encabezado h1{
+color:white;
+margin-bottom:10px;
+}
+
+.encabezado p{
+font-size:18px;
+}
+
+/* TARJETAS */
+
+.tarjetas{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+padding:25px;
+border-radius:18px;
+text-decoration:none;
+color:white;
+transition:.3s;
+box-shadow:0 10px 20px rgba(0,0,0,.20);
+}
+
+.card:hover{
+transform:translateY(-8px) scale(1.03);
+}
+
+.card h2{
+color:white;
+font-size:24px;
+margin-bottom:10px;
+}
+
+.card p{
+font-size:15px;
+line-height:1.5;
+}
+
+.verde{
+background:linear-gradient(135deg,#00b09b,#96c93d);
+}
+
+.azul{
+background:linear-gradient(135deg,#36d1dc,#5b86e5);
+}
+
+.rojo{
+background:linear-gradient(135deg,#ff416c,#ff4b2b);
+}
+
+/* BOTONES */
+
+button,
+.boton-secundario,
+a.boton{
+display:inline-block;
+padding:12px 20px;
+border:none;
+border-radius:10px;
+background:linear-gradient(135deg,#11998e,#38ef7d);
+color:white;
+text-decoration:none;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover,
+.boton-secundario:hover,
+a.boton:hover{
+transform:scale(1.05);
+opacity:.9;
+}
+
+.boton-secundario{
+background:linear-gradient(135deg,#2193b0,#6dd5ed);
+}
+
+/* FORMULARIOS */
+
+.formulario{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+margin-top:20px;
+}
+
+.formulario input,
+.formulario select{
+padding:12px;
+border:1px solid #ccc;
+border-radius:10px;
+font-size:15px;
+outline:none;
+transition:.3s;
+width:100%;
+}
+
+.formulario input:focus,
+.formulario select:focus{
+border:1px solid #36d1dc;
+box-shadow:0 0 8px rgba(54,209,220,.3);
+}
+
+.radio-box{
+grid-column:1/3;
+display:flex;
+gap:25px;
+padding:10px 0;
+font-weight:bold;
+}
+
+.formulario button{
+grid-column:1/3;
+}
+
+/* TABLAS */
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+overflow:hidden;
+border-radius:15px;
+}
+
+th{
+background:linear-gradient(135deg,#1d4350,#a43931);
+color:white;
+padding:14px;
+font-size:15px;
+}
+
+td{
+padding:12px;
+text-align:center;
+border-bottom:1px solid #eee;
+}
+
+tr:nth-child(even){
+background:#f8f9fa;
+}
+
+tr:hover{
+background:#dff9fb;
+transition:.2s;
+}
+
+/* ALERTAS */
+
+.alerta{
+background:#d4edda;
+color:#155724;
+padding:14px;
+border-radius:10px;
+text-align:center;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+/* INFO */
+
+.info{
+margin-top:30px;
+padding:20px;
+text-align:center;
+border-radius:15px;
+background:linear-gradient(135deg,#f6d365,#fda085);
+color:#333;
+}
+
+/* BOTONES TABLA */
+
+.btn-editar{
+background:#ffc107;
+color:black;
+padding:8px 12px;
+border-radius:8px;
+text-decoration:none;
+font-size:14px;
+font-weight:bold;
+margin-right:5px;
+display:inline-block;
+}
+
+.btn-eliminar{
+background:#dc3545;
+color:white;
+padding:8px 12px;
+border-radius:8px;
+text-decoration:none;
+font-size:14px;
+font-weight:bold;
+display:inline-block;
+}
+
+.btn-editar:hover,
+.btn-eliminar:hover{
+opacity:.85;
+transform:scale(1.05);
+}
+
+/* LINKS */
+
+a{
+text-decoration:none;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.formulario{
+grid-template-columns:1fr;
+}
+
+.radio-box{
+grid-column:1/2;
+flex-direction:column;
+gap:10px;
+}
+
+.formulario button{
+grid-column:1/2;
+}
+
+.tarjetas{
+grid-template-columns:1fr;
+}
+
+table{
+font-size:13px;
+}
+
+th,td{
+padding:8px;
+}
+
+h1{
+font-size:28px;
+}
+
+}
